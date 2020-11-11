@@ -29,3 +29,8 @@
 .tab-content {
     padding-top: 10px;
 }
+
+.btn-outline-success{
+    padding: 0px 0px 1px 0px;
+    margin-bottom: 10px;
+}
