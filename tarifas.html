@@ -53,8 +53,8 @@
       aria-selected="false">Tarjetas</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios"
-      aria-selected="false">Comentarios</a>
+    <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab"
+      aria-controls="comentarios" aria-selected="false">Comentarios</a>
   </li>
 </ul>
 
@@ -151,23 +151,69 @@
 
   </div>
   <div class="tab-pane fade show" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-    <div class="d-flex justify-content-center">
-      <div class="card" style="width: 15rem;">
-        <div class="card-header" style="background-color:rgb(3, 134, 167)">
-          Tarjetas aceptadas
+    <div class="accordion" id="accordionTarjetas">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePrepaga"
+              aria-expanded="false" aria-controls="collapsePrepaga">Tarjeta Prepaga</button>
+          </h5>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Tarjeta Prepaga</li>
-          <li class="list-group-item">Tarjeta Gold</li>
-          <li class="list-group-item">Tarjeta Platinum</li>
-          <li class="list-group-item">Tarjeta Black</li>
-        </ul>
+
+        <div id="collapsePrepaga" class="collapse " aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+          <div class="card-body">
+            Podes abonar el total de la reserva con esta tarjeta.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseGold"
+              aria-expanded="false" aria-controls="collapseGold">Tarjeta Gold</button>
+          </h5>
+        </div>
+
+        <div id="collapseGold" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+          <div class="card-body">
+            Podes abonar tu reserva en hasta 6 cuotas sin interés.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePlatinum"
+              aria-expanded="false" aria-controls="collapsePlatinum">Tarjeta Platinum</button>
+          </h5>
+        </div>
+
+        <div id="collapsePlatinum" class="collapse " aria-labelledby="headingThree"
+          data-parent="#accordionTarjetas">
+          <div class="card-body">
+            Podes abonar tu reserva en hasta 12 cuotas sin interés.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlack"
+              aria-expanded="false" aria-controls="collapseBlack">Tarjeta Black</button>
+          </h5>
+        </div>
+
+        <div id="collapseBlack" class="collapse " aria-labelledby="headingFour" data-parent="#accordionTarjetas">
+          <div class="card-body">
+            Podes abonar tu reserva en hasta 12 cuotas sin interés y con 25% de descuento.
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
-  <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
-</div>
+    <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+  </div>
   
     
 <footer>

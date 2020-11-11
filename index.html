@@ -41,22 +41,41 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>¿Cómo reservo?</h3>
-          <p>Podés reservar con nostros o contactando al hotel</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>¿Es seguro?</h3>
-          <p>Totalmente seguro, podes confiar en nosotros.</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>¿Hay reembolso en caso de inconvenientes?</h3>
-          <p>Absolutamente, te devolvemos el 100% si cancelas hasta 24 hs antes.</p>
-        </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reservo" aria-expanded="false"
+        aria-controls="collapseExample1">¿Cómo reservo?</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguro" aria-expanded="false"
+        aria-controls="collapseExample2">¿Es seguro?</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reembolso" aria-expanded="false"
+        aria-controls="collapseExample3">¿Hay reembolso en caso de inconvenientes?</button>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="reservo">
+        <p>
+        <h3>¿Cómo reservo?</h3>
+        <p>Podés reservar con nostros o contactando al hotel</p>
+        </p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="seguro">
+        <p>
+        <h3>¿Es seguro?</h3>
+        <p>Totalmente seguro, podes confiar en nosotros.</p>
+        </p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="reembolso">
+        <p>
+        <h3>¿Hay reembolso en caso de inconvenientes?</h3>
+        <p>Absolutamente, te devolvemos el 100% si cancelas hasta 24 hs antes.</p>
+        </p>
       </div>
     </div>
+  </div>
 
     <img class="card-img-top" src="images/obelisco-buenos-aires-1024x683.jpg" alt="hotel img">
   
